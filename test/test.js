@@ -24,6 +24,7 @@ fs.readdir('.', function (err, files) {
             puts(haml_file + " Passed")
           } catch (e) {
             var message = e.name;
+            puts(haml_file + " Failed")
             if (e.message) message += ": " + e.message;
             puts(message);
             puts("\nJS:\n\n" + js);

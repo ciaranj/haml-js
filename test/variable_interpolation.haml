@@ -1,0 +1,14 @@
+!!! XML
+!!! strict
+%html{ xmlns: "http://www.w3.org/1999/xhtml" }
+  %head
+    %title
+      Sample haml template
+  %body
+    #string_literal{class:'foo'}
+    #raw_variable{class: foo}
+    #string_literal_with_interpolation{class: "xyz_#{foo}_abc_#{bar}"}
+    #string_literal_with_interpolation2{class: "xyz_#{(1 + 2 + 3 + 4)}"}
+    #string_literal_with_interpolation3{class: "xyz_#{(true?'true':'false')+'_'+(false?'true':'false')}"}
+    #string_literal_with_interpolation4.test{class: "xyz_#{(a+b)}"}
+    
